@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/s_black">
+
+    <LinearLayout
+        android:id="@+id/setting_login"
+        android:orientation="horizontal"
+        style="@style/settingItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login"/>
+
+        <TextView
+            android:id="@+id/setting_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="×"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/settingItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_server_info"/>
+
+        <com.verlif.idea.singledown.ui.text.NoLinesEditView
+            android:id="@+id/setting_serverIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/setting_server_ip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical">
+
+            <TextView
+                android:id="@+id/setting_serverIp_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="×"
+                android:textSize="26sp"
+                android:textColor="@color/s_black"/>
+
+            <Button
+                android:id="@+id/setting_serverIp_check"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/text_check"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_clearCache"
+        android:orientation="vertical"
+        style="@style/settingItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_clear_cache"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_clear_cache_detail"
+            style="@style/settingItemDetail"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_filePath"
+        android:orientation="vertical"
+        style="@style/settingItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_download_path"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_download_path_detail"
+            style="@style/settingItemDetail"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/setting_appInfo"
+        android:orientation="vertical"
+        style="@style/settingItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_app_info"
+            style="@style/settingItemDetail"/>
+
+    </LinearLayout>
+</LinearLayout>

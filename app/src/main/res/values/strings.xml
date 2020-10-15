@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SingleDown</string>
+    <string name="text_user_name">用户名</string>
+    <string name="text_password">密码</string>
+    <string name="text_login">登录</string>
+    <string name="text_sure">确定</string>
+    <string name="text_progressbar">下载进度</string>
+    <string name="text_upload">上传</string>
+    <string name="text_now_path">当前路径</string>
+    <string name="text_new_folder">添加文件夹</string>
+    <string name="text_more">更多</string>
+    <string name="text_download">下载</string>
+    <string name="text_delete">删除</string>
+    <string name="setting_server_info">服务器信息</string>
+    <string name="setting_server_ip">服务器IP及端口, 例如 http://10.0.2.2:8080</string>
+    <string name="text_check">检测</string>
+    <string name="text_rename">重命名</string>
+    <string name="text_clear_cache">清除缓存</string>
+    <string name="text_clear_cache_detail">清除缩略图等缓存信息</string>
+    <string name="text_about">关于</string>
+    <string name="text_app_info">软件信息</string>
+    <string name="text_hide">隐藏</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_download_path">下载路径</string>
+    <string name="text_download_path_detail">关于本地下载存储路径</string>
+</resources>

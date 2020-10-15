@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 渐变弹窗动画 -->
+    <style name="alphaAnimation">
+        <item name="android:windowEnterAnimation">@anim/window_in_alpha</item>
+        <item name="android:windowExitAnimation">@anim/window_out_alpha</item>
+    </style>
+
+    <!-- 底部弹窗动画 -->
+    <style name="bottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/window_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/window_out_to_bottom</item>
+    </style>
+
+    <!-- 顶部弹窗动画 -->
+    <style name="topAnimation">
+        <item name="android:windowEnterAnimation">@anim/window_in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/window_out_to_top</item>
+    </style>
+
+    <!-- 一般弹窗动画 -->
+    <style name="defaultAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <!-- toast动画 -->
+    <style name="toastAnimation">
+        <item name="android:windowEnterAnimation">@anim/toast_in</item>
+        <item name="android:windowExitAnimation">@anim/toast_out</item>
+    </style>
+</resources>

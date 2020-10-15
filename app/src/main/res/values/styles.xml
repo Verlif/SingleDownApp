@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/s_black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="Progressbar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/drawable_progress</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="settingItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/bg_setting_item</item>
+    </style>
+
+    <style name="settingItemDetail">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/s_black</item>
+    </style>
+</resources>

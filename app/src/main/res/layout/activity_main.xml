@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.main.MainActivity">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/s_black">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/s_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:orientation="horizontal"
+                android:background="@color/s_black">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:text="@string/text_now_path"
+                        android:textColor="@color/s_white"/>
+
+                    <TextView
+                        android:id="@+id/main_path"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/s_white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/main_sort"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/img_sort" />
+
+                <ImageView
+                    android:id="@+id/main_setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/img_setting" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+        </LinearLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_menuButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:background="@drawable/bg_button_main_menu">
+
+            <Button
+                android:id="@+id/main_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_upload"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_button_main_menu"/>
+
+            <Button
+                android:id="@+id/main_newFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_new_folder"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_button_main_menu" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/main_menuButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            android:text=". . ."
+            android:gravity="center"
+            android:background="@drawable/bg_button_main_menu" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232323</color>
+    <color name="colorPrimaryDark">#232323</color>
+    <color name="colorAccent">#232323</color>
+
+    <color name="s_white">#F4F4F4</color>
+    <color name="s_so_light_grey">#DCDCDC</color>
+    <color name="s_grey">#3C3C3C</color>
+    <color name="s_grey_tran">#333C3C3C</color>
+    <color name="s_grey_tran_deep">#663C3C3C</color>
+    <color name="s_black">#232323</color>
+    <color name="s_green">#00C632</color>
+    <color name="s_blue">#0082C8</color>
+    <color name="s_orange">#C87800</color>
+    <color name="s_purple">#5D00AE</color>
+    <color name="s_red">#F44336</color>
+</resources>
